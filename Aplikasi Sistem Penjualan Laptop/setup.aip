@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="9.7" version="9.7" Modules="java" RootPath="." Language="en" Id="{B6F349AB-A7A5-4587-959C-CD70DC617DBC}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Irvan Corp"/>
+    <ROW Property="ProductCode" Value="1033:{805F5983-9249-4D04-B50C-0E14AF69E9BF} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Sistem Penjualan Laptop"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{145878CE-7CC6-44C7-9FE3-FF367A1E24C3}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="GUI_Dir" Directory_Parent="pemrograman_Dir" DefaultDir="GUI"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="akhir_Dir" Directory_Parent="tugas_Dir" DefaultDir="akhir"/>
+    <ROW Directory="aksi_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="aksi"/>
+    <ROW Directory="aksi_Dir" Directory_Parent="project_Dir" DefaultDir="aksi"/>
+    <ROW Directory="apsourceoutput_Dir" Directory_Parent="generatedsources_Dir" DefaultDir="ap-sou~1|ap-source-output"/>
+    <ROW Directory="bin_Dir" Directory_Parent="APPDIR" DefaultDir="bin"/>
+    <ROW Directory="build_Dir" Directory_Parent="APPDIR" DefaultDir="build"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes"/>
+    <ROW Directory="data_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="data"/>
+    <ROW Directory="data_Dir" Directory_Parent="project_Dir" DefaultDir="data"/>
+    <ROW Directory="dist_Dir" Directory_Parent="APPDIR" DefaultDir="dist"/>
+    <ROW Directory="empty_Dir" Directory_Parent="build_Dir" DefaultDir="empty"/>
+    <ROW Directory="generatedsources_Dir" Directory_Parent="build_Dir" DefaultDir="genera~1|generated-sources"/>
+    <ROW Directory="images_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="images"/>
+    <ROW Directory="images_Dir" Directory_Parent="project_Dir" DefaultDir="images"/>
+    <ROW Directory="input_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="input"/>
+    <ROW Directory="input_Dir" Directory_Parent="project_Dir" DefaultDir="input"/>
+    <ROW Directory="isi_Dir" Directory_Parent="project_Dir" DefaultDir="isi"/>
+    <ROW Directory="koneksi_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="koneksi"/>
+    <ROW Directory="koneksi_Dir" Directory_Parent="project_Dir" DefaultDir="koneksi"/>
+    <ROW Directory="lib_1_Dir" Directory_Parent="APPDIR" DefaultDir="lib"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib"/>
+    <ROW Directory="login_Dir" Directory_Parent="project_Dir" DefaultDir="login"/>
+    <ROW Directory="main_Dir" Directory_Parent="classes_Dir" DefaultDir="main"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="APPDIR" DefaultDir="nbproj~1|nbproject"/>
+    <ROW Directory="pemrograman_Dir" Directory_Parent="akhir_Dir" DefaultDir="pemrog~1|pemrograman"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private"/>
+    <ROW Directory="program_Dir" Directory_Parent="classes_Dir" DefaultDir="program"/>
+    <ROW Directory="project_1_Dir" Directory_Parent="src_Dir" DefaultDir="project"/>
+    <ROW Directory="project_Dir" Directory_Parent="classes_Dir" DefaultDir="project"/>
+    <ROW Directory="proses_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="proses"/>
+    <ROW Directory="proses_Dir" Directory_Parent="project_Dir" DefaultDir="proses"/>
+    <ROW Directory="src_Dir" Directory_Parent="APPDIR" DefaultDir="src"/>
+    <ROW Directory="tampilan_1_Dir" Directory_Parent="project_1_Dir" DefaultDir="tampilan"/>
+    <ROW Directory="tampilan_Dir" Directory_Parent="project_Dir" DefaultDir="tampilan"/>
+    <ROW Directory="tugas_Dir" Directory_Parent="classes_Dir" DefaultDir="tugas"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{D8B604D4-93FE-4961-9EF5-C426E2388099}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="AksiProduk.class" ComponentId="{F8DD29B5-FE31-4355-A4AF-89CD773C81CD}" Directory_="aksi_Dir" Attributes="0" KeyPath="AksiProduk.class" Type="0"/>
+    <ROW Component="AksiProduk.java" ComponentId="{BCB2F346-B96E-45E5-88AC-AD4F08D88FB9}" Directory_="aksi_1_Dir" Attributes="0" KeyPath="AksiProduk.java" Type="0"/>
+    <ROW Component="Database.class" ComponentId="{90189625-178D-4D8F-B347-032B66DD8A52}" Directory_="koneksi_Dir" Attributes="0" KeyPath="Database.class" Type="0"/>
+    <ROW Component="Database.java" ComponentId="{01B978BB-3A48-42AA-A207-1C083CDF8195}" Directory_="koneksi_1_Dir" Attributes="0" KeyPath="Database.java" Type="0"/>
+    <ROW Component="GUI" ComponentId="{2A62DD8A-40BE-44CA-8127-6945F5B458E8}" Directory_="GUI_Dir" Attributes="0"/>
+    <ROW Component="HtmlConverter.exe" ComponentId="{415D9E67-EB58-461B-99E3-5B9CAAB9AB71}" Directory_="bin_Dir" Attributes="0" KeyPath="HtmlConverter.exe"/>
+    <ROW Component="Index.form" ComponentId="{B1C9EECB-02CF-4A36-A9C0-47F1A5A905D3}" Directory_="proses_1_Dir" Attributes="0" KeyPath="Index.form_1" Type="0"/>
+    <ROW Component="Index1.class" ComponentId="{16E411EE-86D8-47D6-8758-03FF713DEC1C}" Directory_="proses_Dir" Attributes="0" KeyPath="Index1.class" Type="0"/>
+    <ROW Component="InputProduk.class" ComponentId="{DE9C82B3-2E66-4A82-A100-0D7F6504A584}" Directory_="input_Dir" Attributes="0" KeyPath="InputProduk.class" Type="0"/>
+    <ROW Component="InputProduk.java" ComponentId="{F72410CB-2C4D-4B80-ADC7-9D60496EE5D6}" Directory_="input_1_Dir" Attributes="0" KeyPath="InputProduk.java" Type="0"/>
+    <ROW Component="Main.java" ComponentId="{119C0FB3-54EB-4A20-9D41-EB8138144858}" Directory_="project_1_Dir" Attributes="0" KeyPath="Main.java" Type="0"/>
+    <ROW Component="Main1.class" ComponentId="{681FE192-D248-46A2-B973-C990FC9F5992}" Directory_="project_Dir" Attributes="0" KeyPath="Main1.class_1" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{07218E98-4917-40F3-AB04-7D54C9DAEBB4}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Produk.class" ComponentId="{54C33437-8606-46D8-A484-E475060FE337}" Directory_="data_Dir" Attributes="0" KeyPath="Produk.class" Type="0"/>
+    <ROW Component="Produk.java" ComponentId="{653326DC-5AE3-4008-9FD7-715DC1B35C37}" Directory_="data_1_Dir" Attributes="0" KeyPath="Produk.java" Type="0"/>
+    <ROW Component="Program.jar" ComponentId="{08D7F2C8-BEC5-4C1C-9D16-165B073779B1}" Directory_="dist_Dir" Attributes="0" KeyPath="Program.jar" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{03557E1F-74F7-4699-8766-288555342A16}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SistemPenjualanLaptop.exe" ComponentId="{B50A882D-D60F-4E94-A953-7DB39E8E194C}" Directory_="APPDIR" Attributes="0" KeyPath="SistemPenjualanLaptop.exe"/>
+    <ROW Component="TampilanProduk.form" ComponentId="{D0F0E6E0-C743-4F7A-8389-B59EA7ED7AA8}" Directory_="tampilan_1_Dir" Attributes="0" KeyPath="TampilanProduk.form_1" Type="0"/>
+    <ROW Component="TampilanProduk1.class" ComponentId="{7C5C5DAB-A47E-4DB0-9EBC-865C706B9FE7}" Directory_="tampilan_Dir" Attributes="0" KeyPath="TampilanProduk1.class" Type="0"/>
+    <ROW Component="appletviewer.exe" ComponentId="{C4785834-C5C7-4A5C-9F9F-95424D5DF3C0}" Directory_="bin_Dir" Attributes="0" KeyPath="appletviewer.exe"/>
+    <ROW Component="apsourceoutput" ComponentId="{4B6C0663-FAAF-4508-9549-DA165879B607}" Directory_="apsourceoutput_Dir" Attributes="0"/>
+    <ROW Component="apt.exe" ComponentId="{8E9541A0-79EE-4804-81A0-1F9CD0D3D905}" Directory_="bin_Dir" Attributes="0" KeyPath="apt.exe"/>
+    <ROW Component="beanreg.dll" ComponentId="{027BA4F9-9878-4F72-B00B-54B1C02FF4FF}" Directory_="bin_Dir" Attributes="0" KeyPath="beanreg.dll"/>
+    <ROW Component="build.xml" ComponentId="{7707AC40-024C-4A3C-88C5-385F8F5CFBFB}" Directory_="APPDIR" Attributes="0" KeyPath="build.xml" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{733EABF9-CB39-415B-887A-5AD4DE6279BB}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{FA1665DF-3FD3-4425-8DD6-D0556A3E5320}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="cancel.png" ComponentId="{189FE5FF-0A82-43A9-9824-11A5BA3940C4}" Directory_="images_Dir" Attributes="0" KeyPath="cancel.png" Type="0"/>
+    <ROW Component="cancel.png_1" ComponentId="{E62CF3A6-A8B9-4F11-8CD8-384CE271101C}" Directory_="images_1_Dir" Attributes="0" KeyPath="cancel.png_1" Type="0"/>
+    <ROW Component="config.properties" ComponentId="{7E4FF21F-0AAD-4226-896E-3963DDCDD2AF}" Directory_="private_Dir" Attributes="0" KeyPath="config.properties" Type="0"/>
+    <ROW Component="empty" ComponentId="{4733E04E-CF6F-4C56-B732-240E50B4EED5}" Directory_="empty_Dir" Attributes="0"/>
+    <ROW Component="extcheck.exe" ComponentId="{B9BBFC11-6302-4B2E-9B6B-F73AA2FA734D}" Directory_="bin_Dir" Attributes="0" KeyPath="extcheck.exe"/>
+    <ROW Component="idlj.exe" ComponentId="{64906D4D-69BB-41C9-946E-F47EC64D0C3C}" Directory_="bin_Dir" Attributes="0" KeyPath="idlj.exe"/>
+    <ROW Component="isi" ComponentId="{BCBF292A-15A1-4F46-99E3-6A4D9BB68451}" Directory_="isi_Dir" Attributes="0"/>
+    <ROW Component="jar.exe" ComponentId="{89FB06DD-5D48-4B1C-96D7-213DB9CFA1D2}" Directory_="bin_Dir" Attributes="0" KeyPath="jar.exe"/>
+    <ROW Component="jarsigner.exe" ComponentId="{84752981-B7E0-4973-8AA0-507CA1D5239C}" Directory_="bin_Dir" Attributes="0" KeyPath="jarsigner.exe"/>
+    <ROW Component="java.exe" ComponentId="{05E4F6B5-6014-44C2-8C07-D0C5B378FAB0}" Directory_="bin_Dir" Attributes="0" KeyPath="java.exe"/>
+    <ROW Component="javac.exe" ComponentId="{0299B065-E5F3-43BB-95FC-EF51D6B8B49B}" Directory_="bin_Dir" Attributes="0" KeyPath="javac.exe"/>
+    <ROW Component="javadoc.exe" ComponentId="{44EDF60C-63D4-4430-8518-D0EDB6A127CC}" Directory_="bin_Dir" Attributes="0" KeyPath="javadoc.exe"/>
+    <ROW Component="javah.exe" ComponentId="{3ACE705E-59F9-4E3B-BDEC-E8FB0E0CF3DC}" Directory_="bin_Dir" Attributes="0" KeyPath="javah.exe"/>
+    <ROW Component="javap.exe" ComponentId="{51B5368B-FB71-449F-8C53-BE467BD73589}" Directory_="bin_Dir" Attributes="0" KeyPath="javap.exe"/>
+    <ROW Component="javarmi.exe" ComponentId="{FDF814F5-62C2-4D21-AEFF-D32B35B1C678}" Directory_="bin_Dir" Attributes="0" KeyPath="javarmi.exe"/>
+    <ROW Component="javaw.exe" ComponentId="{B31D8F46-337D-4B93-BA25-3F9BFF9C26A2}" Directory_="bin_Dir" Attributes="0" KeyPath="javaw.exe"/>
+    <ROW Component="javaws.exe" ComponentId="{9EE6845F-3442-4645-9490-98E204C83152}" Directory_="bin_Dir" Attributes="0" KeyPath="javaws.exe"/>
+    <ROW Component="jconsole.exe" ComponentId="{322677D1-12AA-4076-BE5B-9FC5DD6D4661}" Directory_="bin_Dir" Attributes="0" KeyPath="jconsole.exe"/>
+    <ROW Component="jdb.exe" ComponentId="{34EE7372-9394-42C8-8083-D0812EAF33A6}" Directory_="bin_Dir" Attributes="0" KeyPath="jdb.exe"/>
+    <ROW Component="jhat.exe" ComponentId="{4FE52528-C45E-4698-BC52-A91CB0FF9404}" Directory_="bin_Dir" Attributes="0" KeyPath="jhat.exe"/>
+    <ROW Component="jinfo.exe" ComponentId="{6604CF16-6B5F-4DD8-87A0-223BC38C6BBE}" Directory_="bin_Dir" Attributes="0" KeyPath="jinfo.exe"/>
+    <ROW Component="jli.dll" ComponentId="{AADFA1D3-1EFC-47EF-BC84-BC2C679A6C79}" Directory_="bin_Dir" Attributes="0" KeyPath="jli.dll"/>
+    <ROW Component="jmap.exe" ComponentId="{97C93F38-D1BA-4AE3-8B08-8E9E57E5F4FE}" Directory_="bin_Dir" Attributes="0" KeyPath="jmap.exe"/>
+    <ROW Component="jps.exe" ComponentId="{0ADCB52A-026A-4C26-BFDA-F7FFC14F2AB8}" Directory_="bin_Dir" Attributes="0" KeyPath="jps.exe"/>
+    <ROW Component="jrunscript.exe" ComponentId="{B01F06D6-6947-4873-A7EE-C51D7E273127}" Directory_="bin_Dir" Attributes="0" KeyPath="jrunscript.exe"/>
+    <ROW Component="jstack.exe" ComponentId="{1B0D64AB-5394-4D26-838D-1B45A2E9FD45}" Directory_="bin_Dir" Attributes="0" KeyPath="jstack.exe"/>
+    <ROW Component="jstat.exe" ComponentId="{AE7E57BF-131B-446B-8527-11ECBB79E516}" Directory_="bin_Dir" Attributes="0" KeyPath="jstat.exe"/>
+    <ROW Component="jstatd.exe" ComponentId="{49D1898E-330B-425A-827B-447C592B604D}" Directory_="bin_Dir" Attributes="0" KeyPath="jstatd.exe"/>
+    <ROW Component="jvisualvm.exe" ComponentId="{3EADC0E7-B704-4231-8C9C-392AB601F250}" Directory_="bin_Dir" Attributes="0" KeyPath="jvisualvm.exe"/>
+    <ROW Component="keytool.exe" ComponentId="{2555E776-FBC2-4BE2-8F5E-382E36B29CE4}" Directory_="bin_Dir" Attributes="0" KeyPath="keytool.exe"/>
+    <ROW Component="kinit.exe" ComponentId="{E76BF31F-5C2B-462D-93FD-722DE01A756A}" Directory_="bin_Dir" Attributes="0" KeyPath="kinit.exe"/>
+    <ROW Component="klist.exe" ComponentId="{FC4DBF77-BF87-49BC-A046-04AFAD53732F}" Directory_="bin_Dir" Attributes="0" KeyPath="klist.exe"/>
+    <ROW Component="ktab.exe" ComponentId="{B8A6764D-ABB4-4F87-B66E-01F13C75E5BA}" Directory_="bin_Dir" Attributes="0" KeyPath="ktab.exe"/>
+    <ROW Component="login" ComponentId="{BE9F02A4-9A20-480E-9BE9-04E807D37AA5}" Directory_="login_Dir" Attributes="0"/>
+    <ROW Component="main" ComponentId="{8C568C57-C8EC-407B-AB81-6950A6710730}" Directory_="main_Dir" Attributes="0"/>
+    <ROW Component="msvcr71.dll" ComponentId="{6006B96E-0CF8-484E-94CD-FEDD47A026FF}" Directory_="bin_Dir" Attributes="0" KeyPath="msvcr71.dll"/>
+    <ROW Component="mysqlconnectorjava5.1.18bin.jar" ComponentId="{03477BAD-DFF1-4AA9-AA00-4FA5574CF424}" Directory_="lib_Dir" Attributes="0" KeyPath="mysqlconnectorjava5.1.18bin.jar" Type="0"/>
+    <ROW Component="mysqlconnectorjava5.1.18bin.jar_1" ComponentId="{31BB6D1E-C927-4811-A201-ABB10A8F34B9}" Directory_="lib_1_Dir" Attributes="0" KeyPath="mysqlconnectorjava5.1.18bin.jar_1" Type="0"/>
+    <ROW Component="native2ascii.exe" ComponentId="{EF09C0BC-3225-4DFF-87A2-11B69FD4366A}" Directory_="bin_Dir" Attributes="0" KeyPath="native2ascii.exe"/>
+    <ROW Component="netbeans_automatic_build" ComponentId="{61E9032A-8593-4793-8657-A456D6D1B632}" Directory_="classes_Dir" Attributes="0" KeyPath="netbeans_automatic_build" Type="0"/>
+    <ROW Component="orbd.exe" ComponentId="{C03E23FF-7797-4C48-8924-AA32E7AE73E0}" Directory_="bin_Dir" Attributes="0" KeyPath="orbd.exe"/>
+    <ROW Component="pack200.exe" ComponentId="{DB20AF01-249C-4216-97C4-2159F292FC0C}" Directory_="bin_Dir" Attributes="0" KeyPath="pack200.exe"/>
+    <ROW Component="packager.exe" ComponentId="{521349DC-BD41-41C9-99F4-C92F474A3077}" Directory_="bin_Dir" Attributes="0" KeyPath="packager.exe"/>
+    <ROW Component="policytool.exe" ComponentId="{9D66BD26-909A-4F6E-BF67-29046F3CC9C8}" Directory_="bin_Dir" Attributes="0" KeyPath="policytool.exe"/>
+    <ROW Component="program" ComponentId="{A7E33B65-255E-4877-8EA6-20EB379472B8}" Directory_="program_Dir" Attributes="0"/>
+    <ROW Component="rmic.exe" ComponentId="{EA9E10B8-75C0-44B8-B039-D884EF8E584D}" Directory_="bin_Dir" Attributes="0" KeyPath="rmic.exe"/>
+    <ROW Component="rmid.exe" ComponentId="{77EC4435-76AE-4E57-99F8-814550053724}" Directory_="bin_Dir" Attributes="0" KeyPath="rmid.exe"/>
+    <ROW Component="rmiregistry.exe" ComponentId="{68D8BEBE-AFD3-4B6B-AEB4-2A1710E6E7B7}" Directory_="bin_Dir" Attributes="0" KeyPath="rmiregistry.exe"/>
+    <ROW Component="schemagen.exe" ComponentId="{32BFEABD-C3D3-4BBB-9A90-896FE44AB3A5}" Directory_="bin_Dir" Attributes="0" KeyPath="schemagen.exe"/>
+    <ROW Component="serialver.exe" ComponentId="{DAFD6E62-654E-4EAE-99DF-3B8BE4EC95D8}" Directory_="bin_Dir" Attributes="0" KeyPath="serialver.exe"/>
+    <ROW Component="servertool.exe" ComponentId="{6EE57A96-A24B-43E6-BA88-EF0052539C00}" Directory_="bin_Dir" Attributes="0" KeyPath="servertool.exe"/>
+    <ROW Component="tnameserv.exe" ComponentId="{9FDBE0C9-C479-41AE-AF68-D256AB40D0BF}" Directory_="bin_Dir" Attributes="0" KeyPath="tnameserv.exe"/>
+    <ROW Component="unpack200.exe" ComponentId="{635681EA-03E8-46B4-8499-17F13098F542}" Directory_="bin_Dir" Attributes="0" KeyPath="unpack200.exe"/>
+    <ROW Component="wsgen.exe" ComponentId="{6BE9DBD4-343C-4095-9329-13B7EE3F86DD}" Directory_="bin_Dir" Attributes="0" KeyPath="wsgen.exe"/>
+    <ROW Component="wsimport.exe" ComponentId="{C95C7D71-0297-48FD-95BD-D5DCBF9DA1AB}" Directory_="bin_Dir" Attributes="0" KeyPath="wsimport.exe"/>
+    <ROW Component="xjc.exe" ComponentId="{5688B915-6F7F-4E72-A9F1-D50791D887AA}" Directory_="bin_Dir" Attributes="0" KeyPath="xjc.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath AksiProduk.class AksiProduk.java Database.class Database.java GUI HtmlConverter.exe Index.form Index1.class InputProduk.class InputProduk.java Main.java Main1.class ProductInformation Produk.class Produk.java Program.jar SHORTCUTDIR SistemPenjualanLaptop.exe TampilanProduk.form TampilanProduk1.class appletviewer.exe apsourceoutput apt.exe beanreg.dll build.xml buildimpl.xml builtjar.properties cancel.png cancel.png_1 config.properties empty extcheck.exe idlj.exe isi jar.exe jarsigner.exe java.exe javac.exe javadoc.exe javah.exe javap.exe javarmi.exe javaw.exe javaws.exe jconsole.exe jdb.exe jhat.exe jinfo.exe jli.dll jmap.exe jps.exe jrunscript.exe jstack.exe jstat.exe jstatd.exe jvisualvm.exe keytool.exe kinit.exe klist.exe ktab.exe login main msvcr71.dll mysqlconnectorjava5.1.18bin.jar mysqlconnectorjava5.1.18bin.jar_1 native2ascii.exe netbeans_automatic_build orbd.exe pack200.exe packager.exe policytool.exe program rmic.exe rmid.exe rmiregistry.exe schemagen.exe serialver.exe servertool.exe tnameserv.exe unpack200.exe wsgen.exe wsimport.exe xjc.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AksiProduk.class" Component_="AksiProduk.class" FileName="AksiPr~1.cla|AksiProduk.class" Attributes="0" SourcePath="D:\Program\build\classes\project\aksi\AksiProduk.class" SelfReg="false" NextFile="AksiTransaksi.class"/>
+    <ROW File="AksiProduk.java" Component_="AksiProduk.java" FileName="AksiPr~1.jav|AksiProduk.java" Attributes="0" SourcePath="D:\Program\src\project\aksi\AksiProduk.java" SelfReg="false" NextFile="AksiTransaksi.java"/>
+    <ROW File="AksiTransaksi.class" Component_="AksiProduk.class" FileName="AksiTr~1.cla|AksiTransaksi.class" Attributes="0" SourcePath="D:\Program\build\classes\project\aksi\AksiTransaksi.class" SelfReg="false" NextFile="AksiUser.class"/>
+    <ROW File="AksiTransaksi.java" Component_="AksiProduk.java" FileName="AksiTr~1.jav|AksiTransaksi.java" Attributes="0" SourcePath="D:\Program\src\project\aksi\AksiTransaksi.java" SelfReg="false" NextFile="AksiUser.java"/>
+    <ROW File="AksiUser.class" Component_="AksiProduk.class" FileName="AksiUs~1.cla|AksiUser.class" Attributes="0" SourcePath="D:\Program\build\classes\project\aksi\AksiUser.class" SelfReg="false" NextFile="Produk.class"/>
+    <ROW File="AksiUser.java" Component_="AksiProduk.java" FileName="AksiUs~1.jav|AksiUser.java" Attributes="0" SourcePath="D:\Program\src\project\aksi\AksiUser.java" SelfReg="false" NextFile="Produk.java"/>
+    <ROW File="Database.class" Component_="Database.class" FileName="Databa~1.cla|Database.class" Attributes="0" SourcePath="D:\Program\build\classes\project\koneksi\Database.class" SelfReg="false" NextFile="Main1.class_1"/>
+    <ROW File="Database.java" Component_="Database.java" FileName="Databa~1.jav|Database.java" Attributes="0" SourcePath="D:\Program\src\project\koneksi\Database.java" SelfReg="false" NextFile="Main.java"/>
+    <ROW File="HtmlConverter.exe" Component_="HtmlConverter.exe" FileName="HtmlCo~1.exe|HtmlConverter.exe" Attributes="0" SourcePath="D:\Program\bin\HtmlConverter.exe" SelfReg="false" NextFile="idlj.exe" DigSign="true"/>
+    <ROW File="Index.class" Component_="Index1.class" FileName="Index~1.cla|Index.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Index.class" SelfReg="false" NextFile="Index.form"/>
+    <ROW File="Index.form" Component_="Index1.class" FileName="Index~1.for|Index.form" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Index.form" SelfReg="false" NextFile="Login1.class"/>
+    <ROW File="Index.form_1" Component_="Index.form" FileName="Index~1.for|Index.form" Attributes="0" SourcePath="D:\Program\src\project\proses\Index.form" SelfReg="false" NextFile="Index.java"/>
+    <ROW File="Index.java" Component_="Index.form" FileName="Index~1.jav|Index.java" Attributes="0" SourcePath="D:\Program\src\project\proses\Index.java" SelfReg="false" NextFile="Login.form_1"/>
+    <ROW File="Index1.class" Component_="Index1.class" FileName="Index$~1.cla|Index$1.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Index$1.class" SelfReg="false" NextFile="Index2.class"/>
+    <ROW File="Index2.class" Component_="Index1.class" FileName="Index$~2.cla|Index$2.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Index$2.class" SelfReg="false" NextFile="Index3.class"/>
+    <ROW File="Index3.class" Component_="Index1.class" FileName="Index$~3.cla|Index$3.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Index$3.class" SelfReg="false" NextFile="Index4.class"/>
+    <ROW File="Index4.class" Component_="Index1.class" FileName="Index$~4.cla|Index$4.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Index$4.class" SelfReg="false" NextFile="Index.class"/>
+    <ROW File="InputProduk.class" Component_="InputProduk.class" FileName="InputP~1.cla|InputProduk.class" Attributes="0" SourcePath="D:\Program\build\classes\project\input\InputProduk.class" SelfReg="false" NextFile="InputTransaksi.class"/>
+    <ROW File="InputProduk.java" Component_="InputProduk.java" FileName="InputP~1.jav|InputProduk.java" Attributes="0" SourcePath="D:\Program\src\project\input\InputProduk.java" SelfReg="false" NextFile="InputTransaksi.java"/>
+    <ROW File="InputTransaksi.class" Component_="InputProduk.class" FileName="InputT~1.cla|InputTransaksi.class" Attributes="0" SourcePath="D:\Program\build\classes\project\input\InputTransaksi.class" SelfReg="false" NextFile="InputUser.class"/>
+    <ROW File="InputTransaksi.java" Component_="InputProduk.java" FileName="InputT~1.jav|InputTransaksi.java" Attributes="0" SourcePath="D:\Program\src\project\input\InputTransaksi.java" SelfReg="false" NextFile="InputUser.java"/>
+    <ROW File="InputUser.class" Component_="InputProduk.class" FileName="InputU~1.cla|InputUser.class" Attributes="0" SourcePath="D:\Program\build\classes\project\input\InputUser.class" SelfReg="false" NextFile="Database.class"/>
+    <ROW File="InputUser.java" Component_="InputProduk.java" FileName="InputU~1.jav|InputUser.java" Attributes="0" SourcePath="D:\Program\src\project\input\InputUser.java" SelfReg="false" NextFile="Database.java"/>
+    <ROW File="Login.class" Component_="Index1.class" FileName="Login~1.cla|Login.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Login.class" SelfReg="false" NextFile="Login.form"/>
+    <ROW File="Login.form" Component_="Index1.class" FileName="Login~1.for|Login.form" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Login.form" SelfReg="false" NextFile="TampilanProduk1.class"/>
+    <ROW File="Login.form_1" Component_="Index.form" FileName="Login~1.for|Login.form" Attributes="0" SourcePath="D:\Program\src\project\proses\Login.form" SelfReg="false" NextFile="Login.java"/>
+    <ROW File="Login.java" Component_="Index.form" FileName="Login~1.jav|Login.java" Attributes="0" SourcePath="D:\Program\src\project\proses\Login.java" SelfReg="false" NextFile="TampilanProduk.form_1"/>
+    <ROW File="Login.png" Component_="cancel.png" FileName="Login.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\Login.png" SelfReg="false" NextFile="Ok.png"/>
+    <ROW File="Login.png_1" Component_="cancel.png_1" FileName="Login.png" Attributes="0" SourcePath="D:\Program\src\project\images\Login.png" SelfReg="false" NextFile="Ok.png_1"/>
+    <ROW File="Login1.class" Component_="Index1.class" FileName="Login$~1.cla|Login$1.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Login$1.class" SelfReg="false" NextFile="Login2.class"/>
+    <ROW File="Login2.class" Component_="Index1.class" FileName="Login$~2.cla|Login$2.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Login$2.class" SelfReg="false" NextFile="Login3.class"/>
+    <ROW File="Login3.class" Component_="Index1.class" FileName="Login$~3.cla|Login$3.class" Attributes="0" SourcePath="D:\Program\build\classes\project\proses\Login$3.class" SelfReg="false" NextFile="Login.class"/>
+    <ROW File="Main.class" Component_="Main1.class" FileName="Main~1.cla|Main.class" Attributes="0" SourcePath="D:\Program\build\classes\project\Main.class" SelfReg="false" NextFile="Index1.class"/>
+    <ROW File="Main.java" Component_="Main.java" FileName="Main~1.jav|Main.java" Attributes="0" SourcePath="D:\Program\src\project\Main.java" SelfReg="false" NextFile="Index.form_1"/>
+    <ROW File="Main1.class" Component_="netbeans_automatic_build" FileName="Main$1~1.cla|Main$1.class" Attributes="0" SourcePath="D:\Program\build\classes\Main$1.class" SelfReg="false" NextFile="AksiProduk.class"/>
+    <ROW File="Main1.class_1" Component_="Main1.class" FileName="Main$1~1.cla|Main$1.class" Attributes="0" SourcePath="D:\Program\build\classes\project\Main$1.class" SelfReg="false" NextFile="Main.class"/>
+    <ROW File="Ok.png" Component_="cancel.png" FileName="Ok.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\Ok.png" SelfReg="false" NextFile="Produk.png"/>
+    <ROW File="Ok.png_1" Component_="cancel.png_1" FileName="Ok.png" Attributes="0" SourcePath="D:\Program\src\project\images\Ok.png" SelfReg="false" NextFile="Produk.png_1"/>
+    <ROW File="Produk.class" Component_="Produk.class" FileName="Produk~1.cla|Produk.class" Attributes="0" SourcePath="D:\Program\build\classes\project\data\Produk.class" SelfReg="false" NextFile="Transaksi.class"/>
+    <ROW File="Produk.java" Component_="Produk.java" FileName="Produk~1.jav|Produk.java" Attributes="0" SourcePath="D:\Program\src\project\data\Produk.java" SelfReg="false" NextFile="Transaksi.java"/>
+    <ROW File="Produk.png" Component_="cancel.png" FileName="Produk.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\Produk.png" SelfReg="false" NextFile="save.png"/>
+    <ROW File="Produk.png_1" Component_="cancel.png_1" FileName="Produk.png" Attributes="0" SourcePath="D:\Program\src\project\images\Produk.png" SelfReg="false" NextFile="save.png_1"/>
+    <ROW File="Program.jar" Component_="Program.jar" FileName="Program.jar" Attributes="0" SourcePath="D:\Program\dist\Program.jar" SelfReg="false" NextFile="README.TXT"/>
+    <ROW File="README.TXT" Component_="Program.jar" FileName="README.TXT" Attributes="0" SourcePath="D:\Program\dist\README.TXT" SelfReg="false" NextFile="manifest.mf"/>
+    <ROW File="SistemPenjualanLaptop.exe" Component_="SistemPenjualanLaptop.exe" FileName="Sistem~1.exe|Sistem Penjualan Laptop.exe" Attributes="0" SourcePath="&lt;AI_STUBS_32U&gt;aijclw.exe" SelfReg="false" NextFile="mysqlconnectorjava5.1.18bin.jar_1"/>
+    <ROW File="TampilanProduk.class" Component_="TampilanProduk1.class" FileName="Tampil~7.cla|TampilanProduk.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk.class" SelfReg="false" NextFile="TampilanProduk.form"/>
+    <ROW File="TampilanProduk.form" Component_="TampilanProduk1.class" FileName="Tampil~1.for|TampilanProduk.form" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk.form" SelfReg="false" NextFile="TampilanTransaksi1.class"/>
+    <ROW File="TampilanProduk.form_1" Component_="TampilanProduk.form" FileName="Tampil~1.for|TampilanProduk.form" Attributes="0" SourcePath="D:\Program\src\project\tampilan\TampilanProduk.form" SelfReg="false" NextFile="TampilanProduk.java"/>
+    <ROW File="TampilanProduk.java" Component_="TampilanProduk.form" FileName="Tampil~1.jav|TampilanProduk.java" Attributes="0" SourcePath="D:\Program\src\project\tampilan\TampilanProduk.java" SelfReg="false" NextFile="TampilanTransaksi.form_1"/>
+    <ROW File="TampilanProduk1.class" Component_="TampilanProduk1.class" FileName="Tampil~1.cla|TampilanProduk$1.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk$1.class" SelfReg="false" NextFile="TampilanProduk2.class"/>
+    <ROW File="TampilanProduk2.class" Component_="TampilanProduk1.class" FileName="Tampil~2.cla|TampilanProduk$2.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk$2.class" SelfReg="false" NextFile="TampilanProduk3.class"/>
+    <ROW File="TampilanProduk3.class" Component_="TampilanProduk1.class" FileName="Tampil~3.cla|TampilanProduk$3.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk$3.class" SelfReg="false" NextFile="TampilanProduk4.class"/>
+    <ROW File="TampilanProduk4.class" Component_="TampilanProduk1.class" FileName="Tampil~4.cla|TampilanProduk$4.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk$4.class" SelfReg="false" NextFile="TampilanProduk5.class"/>
+    <ROW File="TampilanProduk5.class" Component_="TampilanProduk1.class" FileName="Tampil~5.cla|TampilanProduk$5.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk$5.class" SelfReg="false" NextFile="TampilanProduk6.class"/>
+    <ROW File="TampilanProduk6.class" Component_="TampilanProduk1.class" FileName="Tampil~6.cla|TampilanProduk$6.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanProduk$6.class" SelfReg="false" NextFile="TampilanProduk.class"/>
+    <ROW File="TampilanTransaksi.class" Component_="TampilanProduk1.class" FileName="Tampi~14.cla|TampilanTransaksi.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi.class" SelfReg="false" NextFile="TampilanTransaksi.form"/>
+    <ROW File="TampilanTransaksi.form" Component_="TampilanProduk1.class" FileName="Tampil~2.for|TampilanTransaksi.form" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi.form" SelfReg="false" NextFile="TampilanUser1.class"/>
+    <ROW File="TampilanTransaksi.form_1" Component_="TampilanProduk.form" FileName="Tampil~2.for|TampilanTransaksi.form" Attributes="0" SourcePath="D:\Program\src\project\tampilan\TampilanTransaksi.form" SelfReg="false" NextFile="TampilanTransaksi.java"/>
+    <ROW File="TampilanTransaksi.java" Component_="TampilanProduk.form" FileName="Tampil~2.jav|TampilanTransaksi.java" Attributes="0" SourcePath="D:\Program\src\project\tampilan\TampilanTransaksi.java" SelfReg="false" NextFile="TampilanUser.form_1"/>
+    <ROW File="TampilanTransaksi1.class" Component_="TampilanProduk1.class" FileName="Tampil~8.cla|TampilanTransaksi$1.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi$1.class" SelfReg="false" NextFile="TampilanTransaksi2.class"/>
+    <ROW File="TampilanTransaksi2.class" Component_="TampilanProduk1.class" FileName="Tampil~9.cla|TampilanTransaksi$2.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi$2.class" SelfReg="false" NextFile="TampilanTransaksi3.class"/>
+    <ROW File="TampilanTransaksi3.class" Component_="TampilanProduk1.class" FileName="Tampi~10.cla|TampilanTransaksi$3.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi$3.class" SelfReg="false" NextFile="TampilanTransaksi4.class"/>
+    <ROW File="TampilanTransaksi4.class" Component_="TampilanProduk1.class" FileName="Tampi~11.cla|TampilanTransaksi$4.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi$4.class" SelfReg="false" NextFile="TampilanTransaksi5.class"/>
+    <ROW File="TampilanTransaksi5.class" Component_="TampilanProduk1.class" FileName="Tampi~12.cla|TampilanTransaksi$5.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi$5.class" SelfReg="false" NextFile="TampilanTransaksi6.class"/>
+    <ROW File="TampilanTransaksi6.class" Component_="TampilanProduk1.class" FileName="Tampi~13.cla|TampilanTransaksi$6.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanTransaksi$6.class" SelfReg="false" NextFile="TampilanTransaksi.class"/>
+    <ROW File="TampilanUser.class" Component_="TampilanProduk1.class" FileName="Tampi~21.cla|TampilanUser.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser.class" SelfReg="false" NextFile="TampilanUser.form"/>
+    <ROW File="TampilanUser.form" Component_="TampilanProduk1.class" FileName="Tampil~3.for|TampilanUser.form" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser.form" SelfReg="false" NextFile="build.xml"/>
+    <ROW File="TampilanUser.form_1" Component_="TampilanProduk.form" FileName="Tampil~3.for|TampilanUser.form" Attributes="0" SourcePath="D:\Program\src\project\tampilan\TampilanUser.form" SelfReg="false" NextFile="TampilanUser.java"/>
+    <ROW File="TampilanUser.java" Component_="TampilanProduk.form" FileName="Tampil~3.jav|TampilanUser.java" Attributes="0" SourcePath="D:\Program\src\project\tampilan\TampilanUser.java" SelfReg="false" NextFile="SistemPenjualanLaptop.exe"/>
+    <ROW File="TampilanUser1.class" Component_="TampilanProduk1.class" FileName="Tampi~15.cla|TampilanUser$1.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser$1.class" SelfReg="false" NextFile="TampilanUser2.class"/>
+    <ROW File="TampilanUser2.class" Component_="TampilanProduk1.class" FileName="Tampi~16.cla|TampilanUser$2.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser$2.class" SelfReg="false" NextFile="TampilanUser3.class"/>
+    <ROW File="TampilanUser3.class" Component_="TampilanProduk1.class" FileName="Tampi~17.cla|TampilanUser$3.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser$3.class" SelfReg="false" NextFile="TampilanUser4.class"/>
+    <ROW File="TampilanUser4.class" Component_="TampilanProduk1.class" FileName="Tampi~18.cla|TampilanUser$4.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser$4.class" SelfReg="false" NextFile="TampilanUser5.class"/>
+    <ROW File="TampilanUser5.class" Component_="TampilanProduk1.class" FileName="Tampi~19.cla|TampilanUser$5.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser$5.class" SelfReg="false" NextFile="TampilanUser6.class"/>
+    <ROW File="TampilanUser6.class" Component_="TampilanProduk1.class" FileName="Tampi~20.cla|TampilanUser$6.class" Attributes="0" SourcePath="D:\Program\build\classes\project\tampilan\TampilanUser$6.class" SelfReg="false" NextFile="TampilanUser.class"/>
+    <ROW File="Transaksi.class" Component_="Produk.class" FileName="Transa~1.cla|Transaksi.class" Attributes="0" SourcePath="D:\Program\build\classes\project\data\Transaksi.class" SelfReg="false" NextFile="User.class"/>
+    <ROW File="Transaksi.java" Component_="Produk.java" FileName="Transa~1.jav|Transaksi.java" Attributes="0" SourcePath="D:\Program\src\project\data\Transaksi.java" SelfReg="false" NextFile="User.java"/>
+    <ROW File="Transaksi.png" Component_="cancel.png" FileName="Transa~1.png|Transaksi.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\Transaksi.png" SelfReg="false" NextFile="update.png"/>
+    <ROW File="Transaksi.png_1" Component_="cancel.png_1" FileName="Transa~1.png|Transaksi.png" Attributes="0" SourcePath="D:\Program\src\project\images\Transaksi.png" SelfReg="false" NextFile="update.png_1"/>
+    <ROW File="User.class" Component_="Produk.class" FileName="User~1.cla|User.class" Attributes="0" SourcePath="D:\Program\build\classes\project\data\User.class" SelfReg="false" NextFile="cancel.png"/>
+    <ROW File="User.java" Component_="Produk.java" FileName="User~1.jav|User.java" Attributes="0" SourcePath="D:\Program\src\project\data\User.java" SelfReg="false" NextFile="cancel.png_1"/>
+    <ROW File="User.png" Component_="cancel.png" FileName="User.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\User.png" SelfReg="false" NextFile="InputProduk.class"/>
+    <ROW File="User.png_1" Component_="cancel.png_1" FileName="User.png" Attributes="0" SourcePath="D:\Program\src\project\images\User.png" SelfReg="false" NextFile="InputProduk.java"/>
+    <ROW File="appletviewer.exe" Component_="appletviewer.exe" FileName="applet~1.exe|appletviewer.exe" Attributes="0" SourcePath="D:\Program\bin\appletviewer.exe" SelfReg="false" NextFile="apt.exe" DigSign="true"/>
+    <ROW File="apt.exe" Component_="apt.exe" FileName="apt.exe" Attributes="0" SourcePath="D:\Program\bin\apt.exe" SelfReg="false" NextFile="beanreg.dll" DigSign="true"/>
+    <ROW File="beanreg.dll" Component_="beanreg.dll" FileName="beanreg.dll" Attributes="0" SourcePath="D:\Program\bin\beanreg.dll" SelfReg="false" NextFile="extcheck.exe"/>
+    <ROW File="build.xml" Component_="build.xml" FileName="build.xml" Attributes="0" SourcePath="D:\Program\build.xml" SelfReg="false" NextFile="mysqlconnectorjava5.1.18bin.jar"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="build-~1.xml|build-impl.xml" Attributes="0" SourcePath="D:\Program\nbproject\build-impl.xml" SelfReg="false" NextFile="genfiles.properties"/>
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="built-~1.pro|built-jar.properties" Attributes="0" SourcePath="D:\Program\build\built-jar.properties" SelfReg="false" NextFile="netbeans_automatic_build"/>
+    <ROW File="cancel.png" Component_="cancel.png" FileName="cancel.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\cancel.png" SelfReg="false" NextFile="delete.png"/>
+    <ROW File="cancel.png_1" Component_="cancel.png_1" FileName="cancel.png" Attributes="0" SourcePath="D:\Program\src\project\images\cancel.png" SelfReg="false" NextFile="delete.png_1"/>
+    <ROW File="config.properties" Component_="config.properties" FileName="config~1.pro|config.properties" Attributes="0" SourcePath="D:\Program\nbproject\private\config.properties" SelfReg="false" NextFile="private.properties"/>
+    <ROW File="delete.png" Component_="cancel.png" FileName="delete.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\delete.png" SelfReg="false" NextFile="invalid.png"/>
+    <ROW File="delete.png_1" Component_="cancel.png_1" FileName="delete.png" Attributes="0" SourcePath="D:\Program\src\project\images\delete.png" SelfReg="false" NextFile="invalid.png_1"/>
+    <ROW File="extcheck.exe" Component_="extcheck.exe" FileName="extcheck.exe" Attributes="0" SourcePath="D:\Program\bin\extcheck.exe" SelfReg="false" NextFile="HtmlConverter.exe" DigSign="true"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="genfil~1.pro|genfiles.properties" Attributes="0" SourcePath="D:\Program\nbproject\genfiles.properties" SelfReg="false" NextFile="config.properties"/>
+    <ROW File="idlj.exe" Component_="idlj.exe" FileName="idlj.exe" Attributes="0" SourcePath="D:\Program\bin\idlj.exe" SelfReg="false" NextFile="jar.exe" DigSign="true"/>
+    <ROW File="invalid.png" Component_="cancel.png" FileName="invalid.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\invalid.png" SelfReg="false" NextFile="Login.png"/>
+    <ROW File="invalid.png_1" Component_="cancel.png_1" FileName="invalid.png" Attributes="0" SourcePath="D:\Program\src\project\images\invalid.png" SelfReg="false" NextFile="Login.png_1"/>
+    <ROW File="jar.exe" Component_="jar.exe" FileName="jar.exe" Attributes="0" SourcePath="D:\Program\bin\jar.exe" SelfReg="false" NextFile="jarsigner.exe" DigSign="true"/>
+    <ROW File="jarsigner.exe" Component_="jarsigner.exe" FileName="jarsig~1.exe|jarsigner.exe" Attributes="0" SourcePath="D:\Program\bin\jarsigner.exe" SelfReg="false" NextFile="javarmi.exe" DigSign="true"/>
+    <ROW File="java.exe" Component_="java.exe" FileName="java.exe" Attributes="0" SourcePath="D:\Program\bin\java.exe" SelfReg="false" NextFile="javac.exe" DigSign="true"/>
+    <ROW File="javac.exe" Component_="javac.exe" FileName="javac.exe" Attributes="0" SourcePath="D:\Program\bin\javac.exe" SelfReg="false" NextFile="javadoc.exe" DigSign="true"/>
+    <ROW File="javadoc.exe" Component_="javadoc.exe" FileName="javadoc.exe" Attributes="0" SourcePath="D:\Program\bin\javadoc.exe" SelfReg="false" NextFile="javah.exe" DigSign="true"/>
+    <ROW File="javah.exe" Component_="javah.exe" FileName="javah.exe" Attributes="0" SourcePath="D:\Program\bin\javah.exe" SelfReg="false" NextFile="javap.exe" DigSign="true"/>
+    <ROW File="javap.exe" Component_="javap.exe" FileName="javap.exe" Attributes="0" SourcePath="D:\Program\bin\javap.exe" SelfReg="false" NextFile="javaw.exe" DigSign="true"/>
+    <ROW File="javarmi.exe" Component_="javarmi.exe" FileName="java-rmi.exe" Attributes="0" SourcePath="D:\Program\bin\java-rmi.exe" SelfReg="false" NextFile="java.exe" DigSign="true"/>
+    <ROW File="javaw.exe" Component_="javaw.exe" FileName="javaw.exe" Attributes="0" SourcePath="D:\Program\bin\javaw.exe" SelfReg="false" NextFile="javaws.exe" DigSign="true"/>
+    <ROW File="javaws.exe" Component_="javaws.exe" FileName="javaws.exe" Attributes="0" SourcePath="D:\Program\bin\javaws.exe" SelfReg="false" NextFile="jconsole.exe" DigSign="true"/>
+    <ROW File="jconsole.exe" Component_="jconsole.exe" FileName="jconsole.exe" Attributes="0" SourcePath="D:\Program\bin\jconsole.exe" SelfReg="false" NextFile="jdb.exe" DigSign="true"/>
+    <ROW File="jdb.exe" Component_="jdb.exe" FileName="jdb.exe" Attributes="0" SourcePath="D:\Program\bin\jdb.exe" SelfReg="false" NextFile="jhat.exe" DigSign="true"/>
+    <ROW File="jhat.exe" Component_="jhat.exe" FileName="jhat.exe" Attributes="0" SourcePath="D:\Program\bin\jhat.exe" SelfReg="false" NextFile="jinfo.exe" DigSign="true"/>
+    <ROW File="jinfo.exe" Component_="jinfo.exe" FileName="jinfo.exe" Attributes="0" SourcePath="D:\Program\bin\jinfo.exe" SelfReg="false" NextFile="jli.dll" DigSign="true"/>
+    <ROW File="jli.dll" Component_="jli.dll" FileName="jli.dll" Attributes="0" SourcePath="D:\Program\bin\jli.dll" SelfReg="false" NextFile="jmap.exe"/>
+    <ROW File="jmap.exe" Component_="jmap.exe" FileName="jmap.exe" Attributes="0" SourcePath="D:\Program\bin\jmap.exe" SelfReg="false" NextFile="jps.exe" DigSign="true"/>
+    <ROW File="jps.exe" Component_="jps.exe" FileName="jps.exe" Attributes="0" SourcePath="D:\Program\bin\jps.exe" SelfReg="false" NextFile="jrunscript.exe" DigSign="true"/>
+    <ROW File="jrunscript.exe" Component_="jrunscript.exe" FileName="jrunsc~1.exe|jrunscript.exe" Attributes="0" SourcePath="D:\Program\bin\jrunscript.exe" SelfReg="false" NextFile="jstack.exe" DigSign="true"/>
+    <ROW File="jstack.exe" Component_="jstack.exe" FileName="jstack.exe" Attributes="0" SourcePath="D:\Program\bin\jstack.exe" SelfReg="false" NextFile="jstat.exe" DigSign="true"/>
+    <ROW File="jstat.exe" Component_="jstat.exe" FileName="jstat.exe" Attributes="0" SourcePath="D:\Program\bin\jstat.exe" SelfReg="false" NextFile="jstatd.exe" DigSign="true"/>
+    <ROW File="jstatd.exe" Component_="jstatd.exe" FileName="jstatd.exe" Attributes="0" SourcePath="D:\Program\bin\jstatd.exe" SelfReg="false" NextFile="jvisualvm.exe" DigSign="true"/>
+    <ROW File="jvisualvm.exe" Component_="jvisualvm.exe" FileName="jvisua~1.exe|jvisualvm.exe" Attributes="0" SourcePath="D:\Program\bin\jvisualvm.exe" SelfReg="false" NextFile="keytool.exe" DigSign="true"/>
+    <ROW File="keytool.exe" Component_="keytool.exe" FileName="keytool.exe" Attributes="0" SourcePath="D:\Program\bin\keytool.exe" SelfReg="false" NextFile="kinit.exe" DigSign="true"/>
+    <ROW File="kinit.exe" Component_="kinit.exe" FileName="kinit.exe" Attributes="0" SourcePath="D:\Program\bin\kinit.exe" SelfReg="false" NextFile="klist.exe" DigSign="true"/>
+    <ROW File="klist.exe" Component_="klist.exe" FileName="klist.exe" Attributes="0" SourcePath="D:\Program\bin\klist.exe" SelfReg="false" NextFile="ktab.exe" DigSign="true"/>
+    <ROW File="ktab.exe" Component_="ktab.exe" FileName="ktab.exe" Attributes="0" SourcePath="D:\Program\bin\ktab.exe" SelfReg="false" NextFile="msvcr71.dll" DigSign="true"/>
+    <ROW File="manifest.mf" Component_="build.xml" FileName="manifest.mf" Attributes="0" SourcePath="D:\Program\manifest.mf" SelfReg="false" NextFile="buildimpl.xml"/>
+    <ROW File="msvcr71.dll" Component_="msvcr71.dll" FileName="msvcr71.dll" Attributes="0" SourcePath="D:\Program\bin\msvcr71.dll" SelfReg="false" NextFile="native2ascii.exe"/>
+    <ROW File="mysqlconnectorjava5.1.18bin.jar" Component_="mysqlconnectorjava5.1.18bin.jar" FileName="mysql-~1.jar|mysql-connector-java-5.1.18-bin.jar" Attributes="0" SourcePath="D:\Program\dist\lib\mysql-connector-java-5.1.18-bin.jar" SelfReg="false" NextFile="Program.jar"/>
+    <ROW File="mysqlconnectorjava5.1.18bin.jar_1" Component_="mysqlconnectorjava5.1.18bin.jar_1" FileName="mysql-~1.jar|mysql-connector-java-5.1.18-bin.jar" Attributes="0" SourcePath="D:\Program\dist\lib\mysql-connector-java-5.1.18-bin.jar" SelfReg="false"/>
+    <ROW File="native2ascii.exe" Component_="native2ascii.exe" FileName="native~1.exe|native2ascii.exe" Attributes="0" SourcePath="D:\Program\bin\native2ascii.exe" SelfReg="false" NextFile="orbd.exe" DigSign="true"/>
+    <ROW File="netbeans_automatic_build" Component_="netbeans_automatic_build" FileName="netbea~1|.netbeans_automatic_build" Attributes="0" SourcePath="D:\Program\build\classes\.netbeans_automatic_build" SelfReg="false" NextFile="netbeans_update_resources"/>
+    <ROW File="netbeans_update_resources" Component_="netbeans_automatic_build" FileName="netbea~2|.netbeans_update_resources" Attributes="0" SourcePath="D:\Program\build\classes\.netbeans_update_resources" SelfReg="false" NextFile="Main1.class"/>
+    <ROW File="orbd.exe" Component_="orbd.exe" FileName="orbd.exe" Attributes="0" SourcePath="D:\Program\bin\orbd.exe" SelfReg="false" NextFile="pack200.exe" DigSign="true"/>
+    <ROW File="pack200.exe" Component_="pack200.exe" FileName="pack200.exe" Attributes="0" SourcePath="D:\Program\bin\pack200.exe" SelfReg="false" NextFile="packager.exe" DigSign="true"/>
+    <ROW File="packager.exe" Component_="packager.exe" FileName="packager.exe" Attributes="0" SourcePath="D:\Program\bin\packager.exe" SelfReg="false" NextFile="policytool.exe" DigSign="true"/>
+    <ROW File="policytool.exe" Component_="policytool.exe" FileName="policy~1.exe|policytool.exe" Attributes="0" SourcePath="D:\Program\bin\policytool.exe" SelfReg="false" NextFile="rmic.exe" DigSign="true"/>
+    <ROW File="private.properties" Component_="config.properties" FileName="privat~1.pro|private.properties" Attributes="0" SourcePath="D:\Program\nbproject\private\private.properties" SelfReg="false" NextFile="private.xml"/>
+    <ROW File="private.xml" Component_="config.properties" FileName="private.xml" Attributes="0" SourcePath="D:\Program\nbproject\private\private.xml" SelfReg="false" NextFile="project.properties"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="projec~1.pro|project.properties" Attributes="0" SourcePath="D:\Program\nbproject\project.properties" SelfReg="false" NextFile="project.xml"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Attributes="0" SourcePath="D:\Program\nbproject\project.xml" SelfReg="false" NextFile="AksiProduk.java"/>
+    <ROW File="rmic.exe" Component_="rmic.exe" FileName="rmic.exe" Attributes="0" SourcePath="D:\Program\bin\rmic.exe" SelfReg="false" NextFile="rmid.exe" DigSign="true"/>
+    <ROW File="rmid.exe" Component_="rmid.exe" FileName="rmid.exe" Attributes="0" SourcePath="D:\Program\bin\rmid.exe" SelfReg="false" NextFile="rmiregistry.exe" DigSign="true"/>
+    <ROW File="rmiregistry.exe" Component_="rmiregistry.exe" FileName="rmireg~1.exe|rmiregistry.exe" Attributes="0" SourcePath="D:\Program\bin\rmiregistry.exe" SelfReg="false" NextFile="schemagen.exe" DigSign="true"/>
+    <ROW File="save.png" Component_="cancel.png" FileName="save.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\save.png" SelfReg="false" NextFile="Transaksi.png"/>
+    <ROW File="save.png_1" Component_="cancel.png_1" FileName="save.png" Attributes="0" SourcePath="D:\Program\src\project\images\save.png" SelfReg="false" NextFile="Transaksi.png_1"/>
+    <ROW File="schemagen.exe" Component_="schemagen.exe" FileName="schema~1.exe|schemagen.exe" Attributes="0" SourcePath="D:\Program\bin\schemagen.exe" SelfReg="false" NextFile="serialver.exe" DigSign="true"/>
+    <ROW File="serialver.exe" Component_="serialver.exe" FileName="serial~1.exe|serialver.exe" Attributes="0" SourcePath="D:\Program\bin\serialver.exe" SelfReg="false" NextFile="servertool.exe" DigSign="true"/>
+    <ROW File="servertool.exe" Component_="servertool.exe" FileName="server~1.exe|servertool.exe" Attributes="0" SourcePath="D:\Program\bin\servertool.exe" SelfReg="false" NextFile="tnameserv.exe" DigSign="true"/>
+    <ROW File="tnameserv.exe" Component_="tnameserv.exe" FileName="tnames~1.exe|tnameserv.exe" Attributes="0" SourcePath="D:\Program\bin\tnameserv.exe" SelfReg="false" NextFile="unpack200.exe" DigSign="true"/>
+    <ROW File="unpack200.exe" Component_="unpack200.exe" FileName="unpack~1.exe|unpack200.exe" Attributes="0" SourcePath="D:\Program\bin\unpack200.exe" SelfReg="false" NextFile="wsgen.exe" DigSign="true"/>
+    <ROW File="update.png" Component_="cancel.png" FileName="update.png" Attributes="0" SourcePath="D:\Program\build\classes\project\images\update.png" SelfReg="false" NextFile="User.png"/>
+    <ROW File="update.png_1" Component_="cancel.png_1" FileName="update.png" Attributes="0" SourcePath="D:\Program\src\project\images\update.png" SelfReg="false" NextFile="User.png_1"/>
+    <ROW File="wsgen.exe" Component_="wsgen.exe" FileName="wsgen.exe" Attributes="0" SourcePath="D:\Program\bin\wsgen.exe" SelfReg="false" NextFile="wsimport.exe" DigSign="true"/>
+    <ROW File="wsimport.exe" Component_="wsimport.exe" FileName="wsimport.exe" Attributes="0" SourcePath="D:\Program\bin\wsimport.exe" SelfReg="false" NextFile="xjc.exe" DigSign="true"/>
+    <ROW File="xjc.exe" Component_="xjc.exe" FileName="xjc.exe" Attributes="0" SourcePath="D:\Program\bin\xjc.exe" SelfReg="false" NextFile="builtjar.properties" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" PackageFileName="setup" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;azure\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;azure\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+    <ROW Directory_="main_Dir" Component_="main"/>
+    <ROW Directory_="program_Dir" Component_="program"/>
+    <ROW Directory_="isi_Dir" Component_="isi"/>
+    <ROW Directory_="login_Dir" Component_="login"/>
+    <ROW Directory_="GUI_Dir" Component_="GUI"/>
+    <ROW Directory_="empty_Dir" Component_="empty"/>
+    <ROW Directory_="apsourceoutput_Dir" Component_="apsourceoutput"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Type="1" Source="aicustact.dll" Target="GetLocalizedCredentials"/>
+    <ROW Action="AI_RunFinishActions" Type="1" Source="aicustact.dll" Target="RunFinishActions" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
+    <ROW Environment="JAVAHOME" Name="=-JAVAHOME" Value="C:\Program File\Irvan Corp\Sistem Penjualan Laptop\bin" Component_="AI_ExePath"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="ClassPath" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[#mysqlconnectorjava5.1.18bin.jar];[#Program.jar];" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="EmbeddedJar" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="FailureCheck" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="LibraryPath" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Library Path" Value="[bin_Dir];" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="MainClass" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="project.Main" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="1.7" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="1.6" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+    <ROW IniFile="Preferredversions" FileName="Sistem~2.ini|Sistem Penjualan Laptop.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Preferred versions" Value="1.6" Action="0" Component_="SistemPenjualanLaptop.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="Sistem Penjualan Laptop.exe" Launcher="SistemPenjualanLaptop.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" AppType="ApplicationType" PreferredVersion="Preferredversions" LibPath="LibraryPath" PlusList="APPDIR;" MinusList="#SistemPenjualanLaptop.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2012" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="0" MacExcluded="true" EmbJarPath="D:\Program\dist\Program.jar" HasEmbJar="EmbeddedJar"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="SistemPenjualanLaptop.exe" Directory_="SHORTCUTDIR" Name="Sistem~1.exe|SistemPenjualanLaptop.exe" Component_="SistemPenjualanLaptop.exe" Target="[#SistemPenjualanLaptop.exe]" Description="SistemPenjualanLaptop.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="SistemPenjualanLaptop.exe_1" Directory_="DesktopFolder" Name="Sistem~1.exe|SistemPenjualanLaptop.exe" Component_="SistemPenjualanLaptop.exe" Target="[#SistemPenjualanLaptop.exe]" Description="SistemPenjualanLaptop.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="azure"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="D:\Program" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>
